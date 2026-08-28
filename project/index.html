@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LÉSCIA | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <a href="index.html" class="nav-logo">LÉSCIA</a>
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-link active">HOME</a>
+            <a href="html/all-product.html" class="nav-link">CATEGORY</a>
+            <a href="html/top.html" class="nav-link">TOP RATED</a>
+            <a href="html/about.html" class="nav-link">ABOUT</a>
+        </nav>
+
+        <!-- Kolom pencarian dihapus dari sini -->
+
+        <div class="nav-actions">
+            <button type="button" class="nav-icon" id="cart-button">
+                ♡ <small id="cart-count">0</small>
+            </button>
+            <button type="button" class="nav-icon" id="profile-button">♡</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero" id="home">
+            <span class="hero-star star-one">✦</span>
+            <span class="hero-star star-two">✧</span>
+            <span class="hero-heart">♡</span>
+
+            <div class="hero-content">
+                <p class="hero-small">WELCOME TO LÉSCIA</p>
+                <h1>Dress your<br><i>own story.</i></h1>
+                <p class="hero-description">
+                    Discover carefully selected pieces made to match your everyday mood, moments, and memories.
+                </p>
+
+                <!-- BUNGKUSAN BARU UNTUK 2 TOMBOL -->
+                <div class="hero-buttons-wrapper">
+                    <a href="html/all-product.html" class="hero-button">
+                        EXPLORE COLLECTION <span>→</span>
+                    </a>
+                    <!-- Tambahkan id="login-register-btn" di bawah ini -->
+                    <a href="html/login.html" class="hero-button btn-outline" id="login-register-btn">
+                        LOGIN / DAFTAR <span>→</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-circle"></div>
+                <div class="hero-card">
+                    <div class="hero-card-top">LÉSCIA</div>
+                    <div class="hero-fashion">
+                        <span>✦</span><span>♡</span><span>✦</span>
+                    </div>
+                    <p>YOUR STYLE<br>YOUR STORY</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CATEGORY -->
+        <section class="category-preview" id="category">
+            <div class="section-heading">
+                <div>
+                    <p class="section-small">EXPLORE</p>
+                    <h2>Find your <i>favorite.</i></h2>
+                </div>
+                <a href="html/all-product.html" class="view-all">VIEW ALL →</a>
+            </div>
+
+            <div class="category-preview-grid" id="category-grid">
+                <button type="button" class="preview-card" data-category="piyama">
+                    <span>01</span>
+                    <div>
+                        <p>SOFT & COMFY</p>
+                        <h3>Piyama</h3>
+                    </div><b>→</b>
+                </button>
+                <button type="button" class="preview-card" data-category="tas">
+                    <span>02</span>
+                    <div>
+                        <p>COMPLETE THE LOOK</p>
+                        <h3>Tas</h3>
+                    </div><b>→</b>
+                </button>
+                <button type="button" class="preview-card" data-category="sepatu">
+                    <span>03</span>
+                    <div>
+                        <p>STEP IN STYLE</p>
+                        <h3>Sepatu</h3>
+                    </div><b>→</b>
+                </button>
+                <button type="button" class="preview-card" data-category="hoodie">
+                    <span>04</span>
+                    <div>
+                        <p>COZY VIBES</p>
+                        <h3>Hoodie</h3>
+                    </div><b>→</b>
+                </button>
+                <button type="button" class="preview-card" data-category="sweater">
+                    <span>05</span>
+                    <div>
+                        <p>WARM & EASY</p>
+                        <h3>Sweater</h3>
+                    </div><b>→</b>
+                </button>
+                <button type="button" class="preview-card" data-category="kaos">
+                    <span>06</span>
+                    <div>
+                        <p>EVERYDAY BASIC</p>
+                        <h3>Kaos</h3>
+                    </div><b>→</b>
+                </button>
+                <button type="button" class="preview-card" data-category="kebaya">
+                    <span>07</span>
+                    <div>
+                        <p>ELEGANT MOMENT</p>
+                        <h3>Kebaya</h3>
+                    </div><b>→</b>
+                </button>
+                <button type="button" class="preview-card" data-category="kemeja">
+                    <span>08</span>
+                    <div>
+                        <p>CLEAN & CLASSIC</p>
+                        <h3>Kemeja</h3>
+                    </div><b>→</b>
+                </button>
+            </div>
+        </section>
+
+        <!-- TOP -->
+        <section class="top-preview">
+            <p class="section-small">LÉSCIA EDIT</p>
+            <h2>Our <i>top picks.</i></h2>
+            <p>Pieces everyone has been loving lately.</p>
+            <a href="html/top.html" class="top-button">VIEW TOP PICKS →</a>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about-preview">
+            <div class="about-decoration">LÉSCIA</div>
+            <div class="about-content">
+                <p class="section-small">ABOUT LÉSCIA</p>
+                <h2>Fashion that feels <i>like you.</i></h2>
+                <p>LÉSCIA hadir untuk menemani kamu menemukan gaya yang terasa seperti diri sendiri.</p>
+                <a href="html/about.html" class="about-button">DISCOVER LÉSCIA →</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- PROFILE POPUP -->
+    <div class="profile-popup" id="profile-popup">
+        <div class="profile-box">
+            <button type="button" class="popup-close" id="close-profile">×</button>
+            <div class="profile-title">
+                <p class="section-small">MY LÉSCIA</p>
+                <h2>Hello, beautiful ♡</h2>
+                <p>Your little fashion corner.</p>
+            </div>
+            <div class="profile-content">
+                <div class="profile-avatar">♡</div>
+                <div class="profile-information">
+                    <label>NAMA</label>
+                    <p id="profile-name">-</p>
+                    <label>EMAIL</label>
+                    <p id="profile-email">-</p>
+                    <label>ALAMAT</label>
+                    <textarea id="profile-address" placeholder="Tulis alamat lengkap kamu..."></textarea>
+                    <button type="button" class="save-address-button" id="save-address-button">SAVE ADDRESS</button>
+                </div>
+            </div>
+            <button type="button" class="logout-button" id="logout-button">LOG OUT</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
