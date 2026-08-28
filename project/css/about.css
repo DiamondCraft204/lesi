@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f2ed;
+    color: #302a27;
+}
+
+.about-navbar {
+    min-height: 75px;
+    padding: 18px 7%;
+
+    background-color: #fffdfb;
+    border-bottom: 1px solid #eee3dc;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-logo {
+    color: #302a27;
+    text-decoration: none;
+
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.page-back {
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+    color: #625650;
+}
+
+.about-hero {
+    min-height: 600px;
+
+    padding: 120px 10%;
+
+    text-align: center;
+
+    background-color: #ead8d1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-small {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #9a8d85;
+}
+
+.about-hero h1 {
+    margin-top: 15px;
+
+    font-family: Georgia, serif;
+    font-size: clamp(50px, 7vw, 85px);
+    font-weight: normal;
+    line-height: 1;
+}
+
+.about-hero h1 i {
+    color: #806d63;
+}
+
+.about-hero > p:last-child {
+    max-width: 650px;
+
+    margin-top: 30px;
+
+    color: #756861;
+    line-height: 1.8;
+}
+
+.about-story {
+    padding: 100px 8%;
+
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+
+    gap: 25px;
+}
+
+.story-card {
+    padding: 50px;
+
+    background-color: #fffdfb;
+
+    border-radius: 25px;
+}
+
+.story-card.second {
+    background-color: #f0e3dc;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.story-card > span {
+    font-size: 35px;
+    color: #b98378;
+}
+
+.story-card h2 {
+    margin-top: 20px;
+
+    font-family: Georgia, serif;
+    font-size: 38px;
+    font-weight: normal;
+}
+
+.story-card p {
+    margin-top: 20px;
+
+    color: #8d817a;
+    line-height: 1.8;
+}
+
+.owner-section {
+    padding: 100px 10%;
+
+    background-color: #fffdfb;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.owner-photo {
+    min-height: 500px;
+
+    border-radius: 30px;
+
+    background-color: #ead8d1;
+
+    overflow: hidden;
+}
+
+.photo-placeholder {
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #806d63;
+}
+
+.photo-placeholder span {
+    font-size: 80px;
+}
+
+.photo-placeholder p {
+    margin-top: 15px;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.owner-text {
+    max-width: 550px;
+}
+
+.owner-text h2 {
+    margin-top: 15px;
+
+    font-family: Georgia, serif;
+    font-size: 48px;
+    font-weight: normal;
+    line-height: 1.1;
+}
+
+.owner-text > p:not(.section-small):not(.owner-signature) {
+    margin-top: 20px;
+
+    color: #8d817a;
+    line-height: 1.8;
+}
+
+.owner-signature {
+    margin-top: 30px;
+
+    font-family: Georgia, serif;
+    font-size: 20px;
+    color: #806d63;
+}
+
+.about-ending {
+    padding: 120px 20px;
+
+    text-align: center;
+
+    background-color: #302a27;
+    color: white;
+}
+
+.ending-decoration {
+    color: #e8cfc6;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+.about-ending h2 {
+    margin-top: 30px;
+
+    font-family: Georgia, serif;
+    font-size: 65px;
+    font-weight: normal;
+    line-height: 1;
+}
+
+.about-ending h2 i {
+    color: #e8cfc6;
+}
+
+.about-ending p {
+    margin-top: 25px;
+    color: #c8bbb4;
+}
+
+.shop-button {
+    display: inline-block;
+
+    margin-top: 30px;
+
+    padding: 15px 22px;
+
+    border: 1px solid #a9958c;
+    border-radius: 7px;
+
+    color: white;
+    text-decoration: none;
+
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
+
+.about-footer {
+    padding: 40px 7%;
+
+    background-color: #302a27;
+    color: #c8bbb4;
+
+    border-top: 1px solid #514641;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.about-footer > div:first-child {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+
+.about-footer p {
+    font-size: 11px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: #e8d8d1;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+.about-footer small {
+    color: #8f827b;
+}
