@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LÉSCIA | All Products</title>
+    <!-- Mundur satu folder (../) untuk memanggil CSS -->
+    <link rel="stylesheet" href="../css/all-product.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="../index.html" class="nav-logo">LÉSCIA</a>
+        <nav class="nav-menu">
+            <a href="../index.html" class="nav-link">HOME</a>
+            <!-- Sesama file di folder html tidak perlu awalan -->
+            <a href="all-product.html" class="nav-link active">CATEGORY</a>
+            <a href="top.html" class="nav-link">TOP RATED</a>
+            <a href="about.html" class="nav-link">ABOUT</a>
+        </nav>
+        <div class="nav-search">
+            <span>⌕</span>
+            <input type="search" id="product-search" placeholder="Search product...">
+            <button type="button" id="product-search-button">→</button>
+        </div>
+        <div class="nav-actions">
+            <button type="button" class="nav-icon" id="cart-button">♡ <small id="cart-count">0</small></button>
+            <button type="button" class="nav-icon" id="profile-button">♡</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="product-header">
+            <button type="button" class="page-back" id="back-button">← BACK</button>
+            <p class="section-small">LÉSCIA COLLECTION</p>
+            <h1>Find your <i>favorite.</i></h1>
+            <p>Pick something that feels like you.</p>
+        </section>
+
+        <section class="filter-section">
+            <button type="button" class="category-filter active" data-category="all">ALL</button>
+            <button type="button" class="category-filter" data-category="piyama">PIYAMA</button>
+            <button type="button" class="category-filter" data-category="tas">TAS</button>
+            <button type="button" class="category-filter" data-category="sepatu">SEPATU</button>
+            <button type="button" class="category-filter" data-category="hoodie">HOODIE</button>
+            <button type="button" class="category-filter" data-category="sweater">SWEATER</button>
+            <button type="button" class="category-filter" data-category="kaos">KAOS</button>
+            <button type="button" class="category-filter" data-category="kebaya">KEBAYA</button>
+            <button type="button" class="category-filter" data-category="kemeja">KEMEJA</button>
+        </section>
+
+        <section class="product-section" id="product-grid">
+            <p class="loading-text">Loading products...</p>
+        </section>
+    </main>
+
+    <div class="product-popup" id="product-popup">
+        <div class="product-popup-box">
+            <button type="button" class="popup-close" id="close-product">×</button>
+            <div class="product-popup-image"><img id="popup-image" src="" alt="Product"></div>
+            <div class="product-popup-content">
+                <p class="popup-category" id="popup-category"></p>
+                <h2 id="popup-name">Product</h2>
+                <div class="popup-rating" id="popup-rating"></div>
+                <h3 id="popup-price">Rp0</h3>
+                <p id="popup-description"></p>
+                <p id="popup-stock"></p>
+                <div class="popup-button-group">
+                    <button type="button" class="add-cart-button" id="add-cart-button">♡ ADD CART</button>
+                    <button type="button" class="checkout-button" id="checkout-button">CHECKOUT →</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-logo">LÉSCIA</div>
+        <div class="footer-text">
+            <h3>Wear what feels like you. ♡</h3>
+            <p>LÉSCIA is a little fashion space made for big feelings, cute outfits, and everyday stories.</p>
+        </div>
+        <div class="footer-social">
+            <a href="#">Instagram</a><a href="#">TikTok</a><a href="#">Pinterest</a>
+        </div>
+        <p class="footer-copy">&copy; 2026 LÉSCIA — Made with ♡</p>
+    </footer>
+
+    <!-- Mundur satu folder untuk panggil JS -->
+    <script src="../js/script.js"></script>
+    <script src="../js/all-product.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LÉSCIA | Cart</title>
+    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+    <header class="simple-navbar">
+        <a href="../index.html" class="nav-logo">LÉSCIA</a>
+        <button type="button" class="page-back" id="back-button">← BACK</button>
+    </header>
+
+    <main class="cart-page">
+        <section class="cart-header">
+            <p class="section-small">YOUR BAG</p>
+            <h1>Shopping <i>cart.</i></h1>
+            <p>Choose your favorites before checking out ♡</p>
+        </section>
+
+        <section class="cart-content">
+            <div class="cart-list" id="cart-list"></div>
+
+            <aside class="checkout-box">
+                <h2>Summary</h2>
+                <div class="summary-row">
+                    <span>Selected items</span>
+                    <span id="selected-count">0</span>
+                </div>
+                <div class="summary-row">
+                    <span>Total</span>
+                    <strong id="cart-total">Rp0</strong>
+                </div>
+                <hr>
+                
+                <label>ALAMAT PENGIRIMAN</label>
+                <textarea id="checkout-address" placeholder="Tulis alamat lengkap..."></textarea>
+                
+                <label>METODE PEMBAYARAN</label>
+                <select id="payment-method">
+                    <option value="">Pilih metode pembayaran</option>
+                    <option value="DANA">DANA</option>
+                    <option value="GoPay">GoPay</option>
+                    <option value="SeaBank">SeaBank</option>
+                    <option value="OVO">OVO</option>
+                    <option value="LÉSCIA Pay">LÉSCIA Pay</option>
+                </select>
+                
+                <button type="button" class="checkout-button" id="checkout-button">CHECKOUT →</button>
+            </aside>
+        </section>
+    </main>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/cart.js"></script>
+</body>
+</html>

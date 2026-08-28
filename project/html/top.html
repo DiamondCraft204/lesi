@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LÉSCIA | Top Rated</title>
+    <link rel="stylesheet" href="../css/top.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="../index.html" class="nav-logo">LÉSCIA</a>
+        <nav class="nav-menu">
+            <a href="../index.html" class="nav-link">HOME</a>
+            <a href="all-product.html" class="nav-link">CATEGORY</a>
+            <a href="top.html" class="nav-link active">TOP RATED</a>
+            <a href="about.html" class="nav-link">ABOUT</a>
+        </nav>
+        <div class="nav-actions">
+            <button type="button" class="nav-icon" id="cart-button">♡ <small id="cart-count">0</small></button>
+            <button type="button" class="nav-icon" id="profile-button">♡</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="top-header">
+            <button type="button" class="page-back" id="back-button">← BACK</button>
+            <p class="section-small">LÉSCIA EDIT</p>
+            <h1>The most <i>loved.</i></h1>
+            <p>Our highest-rated pieces, picked by the LÉSCIA girls.</p>
+        </section>
+
+        <section class="top-product-grid" id="top-product-grid">
+            <p>Loading top rated...</p>
+        </section>
+    </main>
+
+    <div class="product-popup" id="product-popup">
+        <div class="product-popup-box">
+            <button type="button" class="popup-close" id="close-product">×</button>
+            <div class="product-popup-image"><img id="popup-image" src="" alt="Product"></div>
+            <div class="product-popup-content">
+                <p id="popup-category" class="popup-category"></p>
+                <h2 id="popup-name">Product</h2>
+                <p id="popup-rating" class="popup-rating"></p>
+                <h3 id="popup-price">Rp0</h3>
+                <p id="popup-description"></p>
+                <p id="popup-stock"></p>
+                <div class="popup-button-group">
+                    <button type="button" id="add-cart-button" class="add-cart-button">♡ ADD CART</button>
+                    <button type="button" id="checkout-button" class="checkout-button">CHECKOUT →</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/top.js"></script>
+</body>
+</html>

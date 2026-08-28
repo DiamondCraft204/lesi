@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LÉSCIA | Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+
+    <main class="login-page">
+        <!-- BAGIAN KIRI -->
+        <section class="gambar">
+            <video class="video-login" autoplay muted loop playsinline>
+                <source src="../video/fashion.mp4" type="video/mp4">
+            </video>
+            <div class="overlay"></div>
+            
+            <div class="isi-gambar">
+                <div class="logo">
+                    <span>LÉSCIA</span>
+                    <small>WELCOME TO LÉSCIA</small>
+                </div>
+                <div class="teks-gambar">
+                    <h1>Find your<br><i>own vibe.</i></h1>
+                    <span class="deskripsi-kiri">Fashion pieces made for your everyday story.</span>
+                </div>
+                <div class="hiasan">✦ &nbsp; ♡ &nbsp; ✦</div>
+            </div>
+        </section>
+
+        <!-- BAGIAN KANAN (FORM) -->
+        <section class="form-section">
+            
+            <div class="box">
+                <!-- TOMBOL BACK -->
+                <button type="button" class="page-back" id="back-button">← BACK</button>
+
+                <!-- LOGIN -->
+                <div id="login">
+                    <p class="judul-kecil">WELCOME BACK</p>
+                    <h2>Sign in to LÉSCIA</h2>
+                    <p class="deskripsi">Enter your details to continue your fashion journey.</p>
+                    
+                    <form id="loginForm">
+                        <div class="input">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" placeholder="you@example.com" required>
+                        </div>
+                        <div class="input">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" placeholder="Enter your password" required>
+                        </div>
+                        <p id="pesan"></p>
+                        <button type="submit" class="tombol">
+                            <span>SIGN IN</span><span>→</span>
+                        </button>
+                    </form>
+                    
+                    <div class="daftar">
+                        <span>Don't have an account?</span>
+                        <button type="button" id="bukaDaftar">Create account</button>
+                    </div>
+                </div>
+
+                <!-- REGISTER -->
+                <div id="register" class="sembunyi">
+                    <p class="judul-kecil">JOIN LÉSCIA</p>
+                    <h2>Create your account</h2>
+                    <p class="deskripsi">Create an account and discover your personal style.</p>
+                    
+                    <form id="registerForm">
+                        <div class="input">
+                            <label for="nama">NAMA</label>
+                            <input type="text" id="nama" placeholder="Your name" required>
+                        </div>
+                        <div class="input">
+                            <label for="emailDaftar">EMAIL</label>
+                            <input type="email" id="emailDaftar" placeholder="you@example.com" required>
+                        </div>
+                        <div class="input">
+                            <label for="passwordDaftar">PASSWORD</label>
+                            <input type="password" id="passwordDaftar" placeholder="Create a password" required>
+                        </div>
+                        <div class="input">
+                            <label for="konfirmasi">KONFIRMASI PASSWORD</label>
+                            <input type="password" id="konfirmasi" placeholder="Confirm password" required>
+                        </div>
+                        <p id="pesanDaftar"></p>
+                        <button type="submit" class="tombol">
+                            <span>CREATE ACCOUNT</span><span>→</span>
+                        </button>
+                    </form>
+                    
+                    <div class="daftar">
+                        <span>Already have an account?</span>
+                        <button type="button" id="kembali">Sign in</button>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <span>&copy; 2026 LÉSCIA</span>
+                <span>Privacy · Terms</span>
+            </footer>
+        </section>
+    </main>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+</html>
