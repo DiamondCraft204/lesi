@@ -118,4 +118,17 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("search-input")?.addEventListener("keydown", (e) => {
         if (e.key === "Enter") arahkanPencarian(e.target);
     });
+    const categoryCards = document.querySelectorAll(".preview-card");
+    categoryCards.forEach(card => {
+        card.addEventListener("click", () => {
+            // Ambil nama kategori dari data-category
+            const category = card.getAttribute("data-category");
+            
+            // Simpan ke memori sementara (localStorage)
+            localStorage.setItem("selected-category", category);
+            
+            // Pindah ke halaman produk
+            window.location.href = "html/all-product.html"; 
+        });
+    });
 });
